@@ -12,6 +12,8 @@ stages:
   - test_with_coverage: --test-randomize-ordering-seed=random
     os:
     - linux
+  - test: --test-randomize-ordering-seed=random
+    os:
     - windows
   - test: --test-randomize-ordering-seed=random -p chrome
     os:
